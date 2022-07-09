@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Web</title>
+  </head>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: #3a364d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /*  Nav bar */
+    nav {
+      background-color: #1e1c2a;
+      display: grid;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    nav li a {
+      padding: 20px;
+      text-decoration: none;
+      color: #f6f1ef;
+      font-weight: bold;
+      font-size: 20px;
+      float: left;
+      display: block;
+    }
+    nav li a:hover {
+      background-color: rgba(81, 77, 77, 0.576);
+      color: #ff702a;
+    }
+
+    /* Main section */
+
+    .foodlist ul a {
+      text-decoration: none;
+      color: rgb(245, 255, 245);
+      font-weight: bold;
+      word-spacing: 2px;
+      letter-spacing: 1pt;
+      line-height: 20px;
+    }
+    .foodimages {
+      text-align: center;
+      padding: 80px;
+    }
+    .images img {
+      padding: 15px;
+      width: 500px;
+      height: 400px;
+      cursor: pointer;
+      object-fit: cover;
+    }
+    /* .images img:hover {
+      transform: scale(1.04);
+    } */
+    h1 {
+      padding: 15px;
+      text-decoration: underline;
+      margin-left: 20px;
+      color: #ff702a;
+    }
+    .foodlist {
+      margin-left: 20px;
+    }
+    h3 {
+      color: #ff702a;
+      font-weight: bolder;
+    }
+  </style>
+  <body>
+    <!-- Header(Nav) section -->
+    <div>
+      <nav>
+        <ul>
+          <li><a href="# ">Home</a></li>
+          <li><a href="# ">Index</a></li>
+          <li><a href="# ">About</a></li>
+          <li><a href="# ">Contact</a></li>
+          <li><a href="# ">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <!-- list out of foods -->
+
+      <h1>Top 7 favourite foods</h1>
+      <div class="foodlist">
+        <ul>
+          <li><a href="#Biryani">Biryani</a></li>
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#fried_rice">Fried Rice</a></li>
+          <li><a href="#noodles">Noodles</a></li>
+          <li><a href="#fish">Fish salad Dish</a></li>
+          <li><a href="#cake">Cake</a></li>
+          <li><a href="#juice">Juices</a></li>
+        </ul>
+      </div>
+
+      <!-- Food Images  -->
+
+      <div class="foodimages">
+        <div class="images" id="Biryani">
+          <img
+            src="https://images.pexels.com/photos/11170284/pexels-photo-11170284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Biryani"
+          />
+        </div>
+        <h3>Biryani</h3>
+        <div class="images" id="pizza">
+          <img
+            src="https://images.pexels.com/photos/2260201/pexels-photo-2260201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Pizza"
+          />
+        </div>
+        <h3>Pizza</h3>
+        <div class="images" id="fried_rice">
+          <img
+            src="https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="FriedRice"
+          />
+        </div>
+        <h3>Fried Rice</h3>
+        <div class="images" id="noodles">
+          <img
+            src="https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg"
+            alt="noodles"
+          />
+        </div>
+        <h3>Noodles</h3>
+        <div class="images" id="fish">
+          <img
+            src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="fish salad dish"
+          />
+        </div>
+        <h3>Fish salad Dish</h3>
+        <div class="images" id="cake">
+          <img
+            src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="cake"
+          />
+        </div>
+        <h3>Cake</h3>
+        <div class="images" id="juice">
+          <img
+            src="https://images.pexels.com/photos/8215110/pexels-photo-8215110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="juice"
+          />
+        </div>
+        <h3>Juices</h3>
+      </div>
+    </div>
+  </body>
+</html>
