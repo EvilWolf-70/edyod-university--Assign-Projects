@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMLForm</title>
+  </head>
+  <body>
+    <div>
+      <h1>Register Form</h1>
+      <form action="formdata.html" method="get">
+        <fieldset>
+          <legend>Register</legend>
+          <div>
+            <label for="Username">UserName :</label>
+            <br />
+            <input
+              type="text"
+              name="username"
+              id="Username"
+              placeholder="enter your name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="enter your email id"
+            />
+          </div>
+          <div>
+            <label for="Password">Password :</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="Password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div>
+            <label for="confirmpassword">Confirm-Password :</label>
+            <br />
+            <input
+              type="password"
+              name="confirmpassword"
+              id="confirmpassword"
+              placeholder="Re-enter password"
+              required
+            />
+          </div>
+          <div>
+            <label for="dob">D.O.B :</label>
+            <br />
+            <input type="date" name="Birth" id="dob" required />
+          </div>
+          <div>
+            <label for="age">Age :</label>
+            <br />
+            <input
+              type="number"
+              name="Age"
+              id="age"
+              min="0"
+              max="100"
+              value="0"
+              required
+            />
+          </div>
+          <div>
+            <label>Gender :</label>
+            <br />
+
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male </label>
+            <br />
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female </label>
+            <br />
+            <input type="radio" name="gender" value="other" id="other" />
+            <label for="other">Other</label>
+          </div>
+          <div>
+            <label for="mobilenumber">Mobile Number :</label>
+            <br />
+            <input type="tel" name="mobilenumber" id="mobilenumber" required />
+          </div>
+          <div>
+            <label for="city">City :</label>
+            <br />
+
+            <select name="cityname" id="city">
+              <option value="0">None</option>
+              <option value="city1">KA</option>
+              <option value="city2">TN</option>
+              <option value="city3">UP</option>
+              <option value="city4">MH</option>
+              <option value="city5">KL</option>
+              <option value="city6">MP</option>
+            </select>
+          </div>
+          <div>
+            <label for="desc">Description :</label>
+            <br />
+            <textarea
+              name="description"
+              id="desc"
+              cols="30"
+              rows="10"
+              placeholder="description"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="tnc" id="tnc" required />
+            <label for="tnc">I agree to Terms & conditions</label>
+          </div>
+          <div>
+            <br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
