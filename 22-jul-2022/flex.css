@@ -1,0 +1,19 @@
+.container {
+  background-color: chocolate;
+  border: 2px solid blueviolet;
+  margin: 20px;
+  height: 600px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column-reverse;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  justify-content: space-between;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid chartreuse;
+  margin: 20px;
+  background-color: aqua;
+}

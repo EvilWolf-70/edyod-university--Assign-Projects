@@ -25,11 +25,3 @@ body {
   margin: 10px;
   color: black;
 }
-
-.parent .child1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-}
