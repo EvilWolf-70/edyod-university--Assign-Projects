@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  text-transform: initial;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+}
+.menu-list a {
+  text-decoration: none;
+  padding: 15px 0px;
+  margin: 0px 20px;
+  color: black;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.menu-list a:hover {
+  border-bottom: 2px solid #8071d0;
+  color: black;
+  font-size: 24px;
+}
+
+.accbutton button {
+  margin-top: 12px;
+  background-color: #ffd8db;
+  color: #a389cc;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.accbutton button:hover {
+  transform: scale(1.1);
+}
+section {
+  display: flex;
+  padding: 20px 80px;
+}
+.text-sec {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.headtext h1 {
+  font-size: 80px;
+}
+.dotspan {
+  color: #5243c0;
+}
+.headtext p {
+  padding: 20px;
+  line-height: 30px;
+}
+.btnlist {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+.btnlist button {
+  border: none;
+  padding: 20px 50px;
+  background-color: #5243c0;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 30px;
+  font-weight: 400;
+  margin-right: 23px;
+  transition: all 0.5s ease-in-out;
+}
+.btnlist img {
+  margin-right: 10px;
+}
+.btnlist button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(223, 8, 148, 0.644);
+}
+
+/* Card list */
+.cardlist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.cardlist .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  background-color: white;
+  box-shadow: 2px 2px 10px gray;
+  transform: scale(1.1);
+}
+.card:hover > .card-left > .fa-check-circle {
+  color: #5243c0;
+}
+
+.fa-check-circle {
+  font-size: 35px;
+  color: rgb(240, 231, 231);
+  transition: all 0.3s ease-in-out;
+}
+
+.color {
+  width: 40px;
+  height: 15px;
+  border-radius: 20px;
+}
+.card-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.card-left {
+  display: flex;
+  align-items: center;
+}
+.card-left P {
+  margin-left: 20px;
+}
+
+/* right side section */
+.right-img-section {
+  width: 60%;
+}
+.right-img-section img {
+  width: 100%;
+}
