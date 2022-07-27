@@ -154,3 +154,113 @@ section {
 .right-img-section img {
   width: 100%;
 }
+
+/* Responsive screen */
+
+@media screen and (max-width: 769px) {
+  .logo {
+    width: 70px;
+  }
+
+  .menu-list a {
+    padding: 2px 0px;
+    margin: 0 5px;
+    font-size: 15px;
+  }
+  .accbutton button {
+    padding: 7px 10px;
+    font-size: 15px;
+  }
+  section {
+    display: flex;
+    padding: 20px 20px;
+  }
+  .headtext p {
+    font-size: 15px;
+  }
+  .btnlist button {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  .cardlist {
+    width: 320px;
+  }
+  .cardlist .card {
+    height: 40px;
+    width: 100%;
+    padding: 4px;
+  }
+  .fa-check-circle {
+    font-size: 25px;
+  }
+  .color {
+    width: 35px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  .card-left P {
+    font-size: 15px;
+  }
+  .card-right span {
+    font-size: 15px;
+  }
+  .card-right img {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo {
+    width: 50px;
+    margin-right: 5px;
+  }
+
+  .menu-list a {
+    padding: 2px 0px;
+    margin: 0 2px;
+    font-size: 10px;
+  }
+  .accbutton button {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+  .accbutton button:hover {
+    font-size: 12px;
+  }
+  section {
+    display: flex;
+    padding: 10px 10px;
+  }
+  .headtext p {
+    font-size: 12px;
+  }
+  .btnlist button {
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+  .cardlist {
+    width: 270px;
+  }
+  .cardlist .card {
+    height: 30px;
+    width: 100%;
+    padding: 4px;
+  }
+  .fa-check-circle {
+    font-size: 15px;
+  }
+  .color {
+    width: 25px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  .card-left P {
+    font-size: 10px;
+  }
+  .card-right span {
+    font-size: 10px;
+  }
+  .card-right img {
+    width: 15px;
+  }
+}
