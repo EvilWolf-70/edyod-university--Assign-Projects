@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        /* .rect {
+            background-color: rgb(97, 97, 205);
+            padding: 20px;
+            margin: 12px;
+            width: 100px;
+            height: 200px;
+            border-radius: 12px;
+            display: none;
+
+        }
+
+        @media (min-width: 375px) and (max-width: 675px) {
+            #iphone {
+                display: block;
+                color: azure;
+                background-color: chartreuse;
+            }
+        }
+
+        .para {
+            background-color: aqua;
+            color: black;
+            padding: 12px;
+        } */
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+
+        }
+
+        .col {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0px 10px;
+
+        }
+
+        .col img {
+            margin-top: 8px;
+            vertical-align: center;
+            width: 100%;
+        }
+
+        .col img:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 7);
+        }
+
+        @media screen and (max-width:800px) {
+            h1 {
+                text-align: left;
+                color: chartreuse;
+                flex-wrap: nowrap;
+            }
+
+            .col {
+                flex: 50%;
+                max-width: 50%;
+                padding: 0px 20px;
+
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+                padding: 0px 20px;
+
+            }
+        }
+
+        /* @media (max-width:900px) {
+            .col {
+                flex: 60%;
+                max-width: 60%;
+                padding: 0px 20px;
+
+            }
+        } */
+
+        /* @media (max-width:1000px) {
+            .col {
+                flex: 30%;
+                max-width: 30%;
+                padding: 0px 20px;
+
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="para">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aliquid nam beatae. </p>
+        </div>
+        <div class="rect" id="android">anroid</div>
+        <div class="rect" id="tablet">tablet</div>
+        <div class="rect" id="desktop">desktop</div>
+        <div class="rect" id="iphone">iphone</div>
+    </div> -->
+
+
+    <h1>Responsive Gallery</h1>
+    <div class="row">
+        <div class="col">
+            <img src="https://images.pexels.com/photos/12623852/pexels-photo-12623852.jpeg?cs=srgb&dl=pexels-till-daling-12623852.jpg&fm=jpg"
+                alt="">
+            <img src="https://images.pexels.com/photos/12227831/pexels-photo-12227831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+        </div>
+        <div class="col">
+            <img src="https://images.pexels.com/photos/12623852/pexels-photo-12623852.jpeg?cs=srgb&dl=pexels-till-daling-12623852.jpg&fm=jpg"
+                alt="">
+            <img src="https://images.pexels.com/photos/12227831/pexels-photo-12227831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+
+        </div>
+        <div class="col">
+            <img src="https://images.pexels.com/photos/12623852/pexels-photo-12623852.jpeg?cs=srgb&dl=pexels-till-daling-12623852.jpg&fm=jpg"
+                alt="">
+            <img src="https://images.pexels.com/photos/12227831/pexels-photo-12227831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+
+        </div>
+        <div class="col">
+            <img src="https://images.pexels.com/photos/12623852/pexels-photo-12623852.jpeg?cs=srgb&dl=pexels-till-daling-12623852.jpg&fm=jpg"
+                alt="">
+            <img src="https://images.pexels.com/photos/12227831/pexels-photo-12227831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+
+        </div>
+        <div class="col">
+            <img src="https://images.pexels.com/photos/12623852/pexels-photo-12623852.jpeg?cs=srgb&dl=pexels-till-daling-12623852.jpg&fm=jpg"
+                alt="">
+            <img src="https://images.pexels.com/photos/12227831/pexels-photo-12227831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
