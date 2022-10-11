@@ -45,6 +45,8 @@ insert into Customers values(2007,'Pereira','Rome',1004);*/
 
 --select * from Customers;
 
+//ANS::
+
 1.SELECT COUNT(*) FROM SalesPeople Where Sname LIKE 'a%';
 
 2.select sname ,snum  from Salespeople where snum IN (select snum from orders  where amt>2000);
