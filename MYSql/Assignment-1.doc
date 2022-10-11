@@ -53,7 +53,7 @@ insert into Customers values(2007,'Pereira','Rome',1004);*/
 
 3.select  city,count(city) from SalesPeople city where city="Newyork";
 
-4.
+4.select city ,count(*) from SalesPeople city  where City="London" AND City="paris"  ;
 
 5.SELECT odate,Snum,COUNT(*) FROM Orders GROUP BY odate,Snum;
 
