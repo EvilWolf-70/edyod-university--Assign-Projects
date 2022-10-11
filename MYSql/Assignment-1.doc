@@ -1,1 +1,59 @@
 
+create table SalesPeople(Snum int constraint pk_s primary key,Sname varchar(100) constraint ak_sn unique,City varchar(100),comm number(3,2));
+
+
+create table Customers(cnum int constraint pk_cn primary key,cname varchar(100),City varchar(100)NOT NULL,snum int constraint fk_sn references SalesPeople(snum));
+
+
+create table Orders(onum int constraint pk_onum primary key,amt number(6,2),odate date,cnum int constraint fk_cnum references Customers(cnum),snum int constraint fk_snum references SalesPeople(snum));
+
+
+
+
+/*insert into SalesPeople values(1001, 'Peel', 'London',.12);
+insert into SalesPeople values(1002, 'Serres', 'Sanjose', .13);
+insert into SalesPeople values(1004, 'Motika', 'Landon', .11);
+insert into SalesPeople values(1007, 'Rifkin', 'Barcelona', .15);
+insert into SalesPeople values(1003, 'Axelrod', 'Newyork', .10);*/
+
+--select * from SalesPeople;
+
+
+--insert into Orders values(3001, 18.89,'11/10/2022', 2008,1007);
+--UPDATE Order SET odate = '3-10-1990' WHERE onum = 3001;
+/*insert into Orders values(3003, 767.19, '3-10-1990', 2001, 1001);
+insert into Orders values(3002, 1900.10, '3-10-1990', 2007, 1004);
+insert into Orders values(3005, 5160.45, '3-10-1990', 2003, 1002);
+insert into Orders values(3006,  1098.16, '3-10-1990', 2008, 1007);
+insert into Orders values(3009 ,1713.23 ,'4-10-1990', 2002 ,1003);
+insert into Orders values(3007 , 75.75 ,'4-10-1990', 2004 ,1002);
+insert into Orders values(3008  ,4273.00 ,'5-10-1990', 2006, 1001);
+insert into Orders values(3010 , 1309.95 ,'6-10-1990 ',2004 ,1002);
+insert into Orders values(3011 , 9891.88 ,'6-10-1990' ,2006 ,1001);
+*/
+
+--select * from Orders;
+
+/*insert into Customers values(2001,'Hoffman','London',1001);
+insert into Customers values(2002,'Giovanni','Rome',1003);
+insert into Customers values(2003,'Liu','San Jose',1002);
+insert into Customers values(2004,'Grass','Berlin',1002);
+insert into Customers values(2006,'Clemens','London',1001);
+insert into Customers values(2008,'Cisneros','Sanjose',1007);
+insert into Customers values(2007,'Pereira','Rome',1004);*/
+
+
+--select * from Customers;
+
+1.SELECT COUNT(*) FROM SalesPeople Where Sname LIKE 'a%';
+
+2.select sname ,snum  from Salespeople where snum IN (select snum from orders  where amt>2000);
+
+3.select  city,count(city) from SalesPeople city where city="Newyork";
+
+4.
+
+5.SELECT odate,Snum,COUNT(*) FROM Orders GROUP BY odate,Snum;
+
+
+
